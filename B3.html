@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập về nhà tuần 3, bài 3:</title>
+</head>
+<body>
+<h1>tính tổng các số nguyên tố có trong mảng: </h1>
+<script>
+    let array = [1, 2, 3, 4, 5, 6, 7, 9, 11, 13]
+
+    function check() {
+        let total2 = 0;
+        for (let i = 0; i < array.length; i++) {
+            let check = true;
+            if (array[i] >= 2 ) {
+                for (let j = 2; j < array[i] - 1; j++) {
+                    if (array[i] % j === 0) {
+                        check = false;
+                        break;
+                    }
+                }
+                if (check === true) {
+                    total2 += array[i]
+                }
+            }
+        } document.write("Tổng các số nguyên tố trong mảng là: " + total2)
+    }
+    check()
+
+</script>
+</body>
+</html>

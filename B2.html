@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập về nhà tuần 3, bài 2</title>
+</head>
+<body>
+<h1>Đếm số phần tử a được nhập vào từ bàn phím trong mảng có n phần tử cho trước:</h1>
+<script>
+    let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    let inputNumber = parseInt(prompt("Enter your number: "));
+    let count = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === inputNumber) {
+            count++;
+        }
+    } document.write("have: " + count + " number " + inputNumber + " in the array" )
+
+</script>
+</body>
+</html>
